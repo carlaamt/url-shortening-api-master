@@ -57,7 +57,42 @@ header .logo{
     transition: all .3s ease-in-out;
 }
 nav{
+    position: relative;
     width: 100%;
+}
+.btn-mobile{
+    position: absolute;
+    right: 0;
+    top: -1rem;
+    background-color: transparent;
+    border: unset;
+    width: 24px;
+    height: 21px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.icon-menu-mobile{
+    display: block;
+    padding: 0 12px;
+    height: 2px;
+    background-color: var(--grayish-violet);
+    position: relative;
+}
+.icon-menu-mobile::after,
+.icon-menu-mobile::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 0;
+    border: 1px solid var(--grayish-violet);
+    position: absolute;
+}
+.icon-menu-mobile::before{
+    transform: translateY(-6px) translateX(-12px);
+}
+.icon-menu-mobile::after{
+    transform: translateY(6px) translateX(-12px);
 }
 .contenido-nav{
     display: flex;
@@ -90,10 +125,6 @@ nav{
     border-radius: 40px;
     transition: all .3s ease-in-out;
 }
-#btn-mobile{
-    display: none;
-}
-
 /* Header */
 
 
@@ -298,6 +329,7 @@ h2{
 #boost h2{
     color: var(--white);
     margin-bottom: 32px;
+    margin-top: 0;
 }
 
 /* Boost links */
