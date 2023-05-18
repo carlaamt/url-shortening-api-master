@@ -6,11 +6,11 @@ btnMobile.addEventListener('click', function(){
     btnMobile.classList.toggle('btn-transform');
 })
 
-const containerShort = document.querySelector('.short-link');
+const shortly = document.querySelector('#btn-link');
 const link = document.querySelector('#input-link');
 const result = document.querySelector('.result');
 
-containerShort.addEventListener('click', (e) => {
+shortly.addEventListener('click', (e) => {
   e.preventDefault();
   const url = link.value;
 
