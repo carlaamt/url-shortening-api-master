@@ -24,7 +24,7 @@ async function shortenUrl(url) {
         const short = document.createElement('div');
         short.classList.add('item');
         short.innerHTML = `
-            <p> ${data.result.short_link}</p>
+            <p> ${data.result.short}</p>
             <button class="copy-btn">Copy</button>`;
         result.prepend(short);
         const copyBtn = result.querySelector('.copy-btn');
