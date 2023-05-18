@@ -19,7 +19,7 @@ shortly.addEventListener('click', (e) => {
 
 async function shortenUrl(url) {
     try{
-        const api = await fetch(`https://api.shrtco.de/v2/shorten?url=`+ url);
+        const api = await fetch('https://api.shrtco.de/v2/shorten?url=' + url);
         const data = await api.json();
         const short = document.createElement('div');
         short.classList.add('item');
